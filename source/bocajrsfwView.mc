@@ -49,7 +49,6 @@ class bocajrsfwView extends WatchUi.WatchFace {
   		var heightRectangle = dc.getHeight() / 3;
   		var heightCenter = dc.getHeight() / 2;
   		var widthCenter = dc.getWidth() / 2;
-  		var width = dc.getWidth();
   		
 		dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_TRANSPARENT);
 		dc.fillRectangle(0, 0, dc.getWidth(), dc.getHeight() / 3);
