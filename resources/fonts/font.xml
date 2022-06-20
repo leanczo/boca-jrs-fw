@@ -1,0 +1,4 @@
+<fonts>
+	<font id="bocaFont" filename="boca_font.fnt"/>
+	<font id="bocaFontMedium" filename="boca_font_medium.fnt"/>
+</fonts>
