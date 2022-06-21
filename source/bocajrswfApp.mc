@@ -2,7 +2,7 @@ import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
-class bocajrsfwApp extends Application.AppBase {
+class bocajrswfApp extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();

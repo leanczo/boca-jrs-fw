@@ -5,7 +5,7 @@ import Toybox.System;
 import Toybox.WatchUi;
 using Toybox.Time.Gregorian as Calendar;
 
-class bocajrsfwView extends WatchUi.WatchFace {
+class bocajrswfView extends WatchUi.WatchFace {
 
 	var bocaFont;
 	var bocaFontMedium;
