@@ -45,19 +45,21 @@ class bocajrsfwView extends WatchUi.WatchFace {
         }
         var timeString = Lang.format(timeFormat, [hours, clockTime.min.format("%02d")]);
         View.onUpdate(dc);
-         
-  		var heightRectangle = dc.getHeight() / 3;
-  		var heightCenter = dc.getHeight() / 2;
-  		var widthCenter = dc.getWidth() / 2;
+        
+		var widthScreen = dc.getWidth();
+		var heightScreen = dc.getHeight();
+  		var heightRectangle = heightScreen / 3;
+  		var heightCenter = heightScreen / 2;
+  		var widthCenter = widthScreen / 2;
   		
 		dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_TRANSPARENT);
 		dc.fillRectangle(0, 0, dc.getWidth(), dc.getHeight() / 3);
 		
 		dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-		dc.fillRectangle(0,heightRectangle, dc.getWidth(),heightRectangle);
+		dc.fillRectangle(0, heightRectangle, widthScreen, heightRectangle);
 		
 		dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_TRANSPARENT);
-		dc.fillRectangle(0, heightRectangle* 2, dc.getWidth(), heightRectangle);
+		dc.fillRectangle(0, heightRectangle * 2, widthScreen, heightRectangle);
 		
 		dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_TRANSPARENT);
 		dc.drawText(widthCenter, heightCenter - 23, bocaFontMedium, timeString, Graphics.TEXT_JUSTIFY_CENTER);
