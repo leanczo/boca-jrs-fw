@@ -18,7 +18,7 @@ class bocajrswfApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new bocajrsfwView()] as Array<Views or InputDelegates>;
+        return [ new bocajrswfView()] as Array<Views or InputDelegates>;
     }
     
     // New app settings have been received so trigger a UI update
@@ -27,6 +27,6 @@ class bocajrswfApp extends Application.AppBase {
     } 
 }
 
-function getApp() as bocajrsfwApp {
-    return Application.getApp() as bocajrsfwApp;
+function getApp() as bocajrswfApp {
+    return Application.getApp() as bocajrswfApp;
 }
